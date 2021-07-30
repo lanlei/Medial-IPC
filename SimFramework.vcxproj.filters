@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{5f5ae1cf-490f-417f-b9b6-079863e22dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{513ca9af-a7a7-45d0-8d9f-27be6a73d676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{d7c8b25b-220c-48e1-8b9b-09bdacbad98b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shader">
+      <UniqueIdentifier>{f1d316e8-5435-40ea-b513-1c269417737a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shader\Program">
+      <UniqueIdentifier>{3fadbccd-edce-432c-b913-7f76c14924d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ui">
+      <UniqueIdentifier>{8b4a90db-0468-40f6-902a-731890cc6b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Simulator">
+      <UniqueIdentifier>{6de309e9-a75c-47c0-b414-279c340fbf30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ui\Form">
+      <UniqueIdentifier>{7f1ad428-9585-4e9e-8217-1209268fd51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\tinyxml">
+      <UniqueIdentifier>{8beff164-c11e-41c2-be82-b29c03493105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Simulator\FiniteElementMethod">
+      <UniqueIdentifier>{692d481c-85be-453b-9315-5c3b8550c533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\DataStructure">
+      <UniqueIdentifier>{841714d6-7c20-4a87-85df-7b690dce6938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\MedialMesh">
+      <UniqueIdentifier>{736f206d-ac1a-411d-afc9-2eed8b5d1ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\TriangleMesh">
+      <UniqueIdentifier>{232e98aa-5390-40da-b436-b61596adfb84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\VolumetricMesh">
+      <UniqueIdentifier>{449fdfe5-f30a-4962-ac24-c17a623314fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\VolumetricMesh\IsotropicMaterial">
+      <UniqueIdentifier>{86a50ea4-7fc4-4070-bfad-8cd065cea275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Simulator\CollisionDetection">
+      <UniqueIdentifier>{f7f1eae8-51fb-4917-b063-dd43f86087f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model\MedialMesh\Cuda">
+      <UniqueIdentifier>{3f53298d-2403-4e5a-851f-af9e15c8b1ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Simulator\CUDA">
+      <UniqueIdentifier>{fcd15d00-79c2-49b6-be12-0e3e61bf0dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\SVD">
+      <UniqueIdentifier>{d1fe5d48-8a43-4c0a-a816-977b63a3ec5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Simulator\mipc">
+      <UniqueIdentifier>{49088518-8dd1-42c9-9208-2f0e7b552341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Simulator\FiniteElementMethod\Reduced">
+      <UniqueIdentifier>{f5c44653-d9c0-42c4-bd95-54858fed9ac5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimFramework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\BaseScene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\BaseLighting.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\tiny_obj_loader.cc">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\GeometryElement.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\BaseFrame.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader\ScreenFontType.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader\ShaderProgram.cpp">
+      <Filter>Source Files\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\MainLayout.cpp">
+      <Filter>Source Files\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\BaseRightWidget.cpp">
+      <Filter>Source Files\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\BaseBottomWidget.cpp">
+      <Filter>Source Files\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\BaseMainWidget.cpp">
+      <Filter>Source Files\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\ColorSelectionPanel.cpp">
+      <Filter>Source Files\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\DataConversion.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\BaseMaterialEditWidget.cpp">
+      <Filter>Source Files\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\BaseSimulator.cpp">
+      <Filter>Source Files\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\BaseToolBar.cpp">
+      <Filter>Source Files\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\BaseModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StandardCamera.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\tinyxml\tinyxml.cpp">
+      <Filter>Source Files\Common\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\FiniteElementMethod\FemSimulator.cpp">
+      <Filter>Source Files\Simulator\FiniteElementMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\FiniteElementMethod\FemModel.cpp">
+      <Filter>Source Files\Simulator\FiniteElementMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\SparseMatrixRemoveRows.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\SparseMatrixTopology.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\GeometryComputation.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\MedialMesh\BaseMedialMedialHandle.cpp">
+      <Filter>Source Files\Model\MedialMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\MedialMesh\BaseMedialMesh.cpp">
+      <Filter>Source Files\Model\MedialMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\MedialMesh\BaseMedialMeshBufferPool.cpp">
+      <Filter>Source Files\Model\MedialMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\TriangleMesh\BaseRenderMaterial.cpp">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\TriangleMesh\BaseSurfaceHandle.cpp">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\TriangleMesh\BaseSurfaceMesh.cpp">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\TriangleMesh\BaseSurfaceMeshBufferPool.cpp">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\BaseTetMesh.cpp">
+      <Filter>Source Files\Model\VolumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\BaseTetMeshBufferPool.cpp">
+      <Filter>Source Files\Model\VolumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\BaseTetMeshHandle.cpp">
+      <Filter>Source Files\Model\VolumetricMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\FiniteElementMethod\ImplicitNewMarkSolverConfig.cpp">
+      <Filter>Source Files\Simulator\FiniteElementMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\IsotropicMaterial\IsotropicMaterial.cpp">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\IsotropicMaterial\IsotropicMaterialWithCompressionResistance.cpp">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\IsotropicMaterial\NeoHookeanIsotropicMaterial.cpp">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\IsotropicMaterial\StvkIsotropicMaterial.cpp">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\VolumetricMesh\IsotropicMaterial\VolumetricMeshENuMaterial.cpp">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\PolynomialSolver.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Commom\SPDProjectFunction.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\CollisionDetection\CollisionDetectionMedialMesh.cpp">
+      <Filter>Source Files\Simulator\CollisionDetection</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\Cuda\CudaHandle.cpp">
+      <Filter>Source Files\Simulator\CUDA</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\mipc\MipcSimulator.cpp">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\mipc\MipcConstraint.cpp">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\mipc\MipcModel.cpp">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\FiniteElementMethod\Reduced\ReducedFrame.cpp">
+      <Filter>Source Files\Simulator\FiniteElementMethod\Reduced</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="SimFramework.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ui\Form\ColorSelectionWidget.ui">
+      <Filter>Source Files\Ui\Form</Filter>
+    </QtUic>
+    <QtUic Include="Ui\Form\MaterialEditWidget.ui">
+      <Filter>Source Files\Ui\Form</Filter>
+    </QtUic>
+    <QtUic Include="Ui\Form\BottomFormWidget.ui">
+      <Filter>Source Files\Ui\Form</Filter>
+    </QtUic>
+    <QtUic Include="Ui\Form\RightFormWidget.ui">
+      <Filter>Source Files\Ui\Form</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="SimFramework.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SimFramework.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Scene\BaseScene.h">
+      <Filter>Source Files\Scene</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\BaseRightWidget.h">
+      <Filter>Source Files\Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\BaseBottomWidget.h">
+      <Filter>Source Files\Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\BaseMainWidget.h">
+      <Filter>Source Files\Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\ColorSelectionPanel.h">
+      <Filter>Source Files\Ui</Filter>
+    </QtMoc>
+    <QtMoc Include="Ui\BaseMaterialEditWidget.h">
+      <Filter>Source Files\Ui</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene\BaseLighting.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\tiny_obj_loader.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GeometryElement.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\BaseFrame.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\ScreenFontType.h">
+      <Filter>Source Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\ShaderProgram.h">
+      <Filter>Source Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\MainLayout.h">
+      <Filter>Source Files\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\DataConversion.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\FileIO.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\BaseSimulator.h">
+      <Filter>Source Files\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\BaseToolBar.h">
+      <Filter>Source Files\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\BaseModel.h">
+      <Filter>Source Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\BufferSerialization.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StandardCamera.h">
+      <Filter>Source Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\tinyxml\tinyxml.h">
+      <Filter>Source Files\Common\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda\CudaHeader.cuh">
+      <Filter>Source Files\Model\MedialMesh\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda\CudaMatrixOperator.cuh">
+      <Filter>Source Files\Model\MedialMesh\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda\CudaSVD.cuh">
+      <Filter>Source Files\Model\MedialMesh\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\FiniteElementMethod\FemSimulator.h">
+      <Filter>Source Files\Simulator\FiniteElementMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\FiniteElementMethod\FemModel.h">
+      <Filter>Source Files\Simulator\FiniteElementMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\SparseMatrixRemoveRows.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\SparseMatrixTopology.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\GeometryComputation.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\EigenMatrixIO.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCore.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\DataStructure\DataSet.h">
+      <Filter>Source Files\Common\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\MedialMesh\BaseMedialMedialHandle.h">
+      <Filter>Source Files\Model\MedialMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\MedialMesh\BaseMedialMesh.h">
+      <Filter>Source Files\Model\MedialMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\MedialMesh\BaseMedialMeshBufferPool.h">
+      <Filter>Source Files\Model\MedialMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\TriangleMesh\BaseRenderMaterial.h">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\TriangleMesh\BaseSurfaceHandle.h">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\TriangleMesh\BaseSurfaceMesh.h">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\TriangleMesh\BaseSurfaceMeshBufferPool.h">
+      <Filter>Source Files\Model\TriangleMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\BaseTetMesh.h">
+      <Filter>Source Files\Model\VolumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\BaseTetMeshBufferPool.h">
+      <Filter>Source Files\Model\VolumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\BaseTetMeshHandle.h">
+      <Filter>Source Files\Model\VolumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\BaseTetMeshMaterial.h">
+      <Filter>Source Files\Model\VolumetricMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\FiniteElementMethod\ImplicitNewMarkSolverConfig.h">
+      <Filter>Source Files\Simulator\FiniteElementMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\IsotropicMaterial\IsotropicMaterial.h">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\IsotropicMaterial\IsotropicMaterialWithCompressionResistance.h">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\IsotropicMaterial\NeoHookeanIsotropicMaterial.h">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\IsotropicMaterial\StvkIsotropicMaterial.h">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\VolumetricMesh\IsotropicMaterial\VolumetricMeshENuMaterial.h">
+      <Filter>Source Files\Model\VolumetricMesh\IsotropicMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\PolynomialSolver.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\SPDProjectFunction.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\CollisionDetection\CollisionDetectionMedialMesh.h">
+      <Filter>Source Files\Simulator\CollisionDetection</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\SimulatorFactor.h">
+      <Filter>Source Files\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\Cuda\CudaHeader.cuh">
+      <Filter>Source Files\Simulator\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\Cuda\CudaMatrixOperator.cuh">
+      <Filter>Source Files\Simulator\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\Cuda\CudaSVD.cuh">
+      <Filter>Source Files\Simulator\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixCore.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\Cuda\CudaHandle.h">
+      <Filter>Source Files\Simulator\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\ConvertSparseMatrixToCSR.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\AutoFlipSVD.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\SVD\ImplicitQRSVD.h">
+      <Filter>Source Files\Common\SVD</Filter>
+    </ClInclude>
+    <ClInclude Include="Commom\SVD\SvdTools.h">
+      <Filter>Source Files\Common\SVD</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\mipc\MipcSimulator.h">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\mipc\gpuFunc.cuh">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\mipc\MipcConstraint.h">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\mipc\MipcModel.h">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\mipc\MPsCCD.cuh">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\FiniteElementMethod\Reduced\ReducedFrame.h">
+      <Filter>Source Files\Simulator\FiniteElementMethod\Reduced</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\program\depth_map.fs">
+      <Filter>Source Files\Shader\Program</Filter>
+    </None>
+    <None Include="Shader\program\depth_map.vs">
+      <Filter>Source Files\Shader\Program</Filter>
+    </None>
+    <None Include="Shader\program\phong_shader_program.fs">
+      <Filter>Source Files\Shader\Program</Filter>
+    </None>
+    <None Include="Shader\program\phong_shader_program.vs">
+      <Filter>Source Files\Shader\Program</Filter>
+    </None>
+    <None Include="Shader\program\text_shader_program.fs">
+      <Filter>Source Files\Shader\Program</Filter>
+    </None>
+    <None Include="Shader\program\text_shader_program.vs">
+      <Filter>Source Files\Shader\Program</Filter>
+    </None>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="Cuda\CudaMatrixOperator.cu">
+      <Filter>Source Files\Model\MedialMesh\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Cuda\CudaSVD.cu">
+      <Filter>Source Files\Model\MedialMesh\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Simulator\Cuda\CudaMatrixOperator.cu">
+      <Filter>Source Files\Simulator\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Simulator\Cuda\CudaSVD.cu">
+      <Filter>Source Files\Simulator\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Simulator\mipc\gpuFunc.cu">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Simulator\mipc\MPsCCD.cu">
+      <Filter>Source Files\Simulator\mipc</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SimFramework.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="window_ico.ico" />
+  </ItemGroup>
+</Project>

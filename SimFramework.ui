@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SimFrameworkClass</class>
+ <widget class="QMainWindow" name="SimFrameworkClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1030</width>
+    <height>855</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SimFramework</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="SimFramework.qrc">
+    <normaloff>:/SimFramework/window_ico.ico</normaloff>:/SimFramework/window_ico.ico</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="SimFramework.qrc"/>
+  <include location="icon/ui_icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

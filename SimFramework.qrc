@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/SimFramework">
+        <file>window_ico.ico</file>
+    </qresource>
+</RCC>

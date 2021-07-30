@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<SimFramework name = "mipc_simulator" run = "CUDA">
+<simulator>
+<timeStep> 0.02 </timeStep>
+<gravity> -9.8 </gravity>
+<SysType> DENSE </SysType>
+<kappa>1000</kappa>
+<dhat>0.001</dhat>
+<object name = "dinosaur_h" volumetric_mesh = "tet" medial_mesh = "mat">
+	<scale> 1.0 </scale>
+	<translation> 0 1.78 0 </translation>
+	<rotation> 0.0 0.0 1.0 45.0</rotation>
+	<density> 5.0 </density>
+	<YoungModulus> 1200 </YoungModulus>
+	<Poisson> 0.35 </Poisson>
+</object>
+<object name = "CactusCombi_4_branch" volumetric_mesh = "tet" medial_mesh = "mat">
+	<scale> 1.5 </scale>
+	<translation> 0.0 0.2 0.0 </translation>
+	<rotation> 0.0 0.0 0.0 0.0</rotation>
+	<density> 60.0 </density>
+	<YoungModul> 50000 </YoungModul>
+	<Poisson> 0.35 </Poisson>
+<enableGravity> 0 </enableGravity>
+</object>
+<static_object name = "floor" volumetric_mesh = "tet" medial_mesh = "mat">
+	<scale> 5.0 </scale>
+	<translation> 0 -0.038 0 </translation>
+	<rotation> 0.0 0.0 1.0 90.0</rotation>
+</static_object>
+</simulator>
+</SimFramework>
+
+
+
+
