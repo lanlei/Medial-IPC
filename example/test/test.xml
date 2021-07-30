@@ -10,8 +10,8 @@
 	<scale> 1.0 </scale>
 	<translation> 0 1.78 0 </translation>
 	<rotation> 0.0 0.0 1.0 45.0</rotation>
-	<density> 5.0 </density>
-	<YoungModulus> 1200 </YoungModulus>
+	<density> 2.0 </density>
+	<YoungModulus> 1000 </YoungModulus>
 	<Poisson> 0.35 </Poisson>
 </object>
 <static_object name = "floor" volumetric_mesh = "tet" medial_mesh = "mat">
