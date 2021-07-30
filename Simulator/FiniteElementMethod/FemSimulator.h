@@ -57,67 +57,17 @@ namespace FiniteElementMethod
 		virtual void computeStiffnessMatrix();
 		virtual void computePartialPF(VectorX& displacement);
 
-		virtual void computeElasticsEnergy(qeal& energy, VectorX& X, VectorX& V);
-
-		virtual void computeElasticsEnergy(qeal& energy, SparseMatrix& A, VectorX& rhs, VectorX& X);
-
-		virtual void computeNewtonSolverEnergy(qeal& E, qeal& Eprev, SparseMatrix& A, VectorX& rhs, VectorX& x);
-
-		virtual void computeNewtonSolverEnergy(qeal& E, qeal& Eprev, MatrixX& A, VectorX& rhs, VectorX& x, qeal linearSearch = 1.0);
-
-		virtual void computeNewtonSolverEnergy(qeal& E, MatrixX& A, VectorX& rhs, VectorX& x);
-
-		virtual qeal computeNeoHookeanEnergy(int eid, BaseTetMeshHandle* tet, Matrix3& F);
-		virtual qeal computeNeoHookeanEnergy(VectorX& displacement);
-
-		virtual void computeElasticsEnergy(VectorX& X, VectorX& Xtilde, SparseMatrix& Mass, qeal& h, qeal& E);
-
 		virtual void stableNeoHookean(int eid, BaseTetMeshHandle* tet, Matrix3& F, Matrix3& FPK, MatrixX&PF);
-
-		virtual void commonNeoHookean(int eid, BaseTetMeshHandle* tet, Matrix3& F, Matrix3& FPK, MatrixX&PF);
-
-		virtual void computeCommonNeoHookeanPartialPF(VectorX& displacement);
-
 
 		virtual void doTime(int frame = 0);
 
-		virtual void doTime2(int frame = 0);
-
-		virtual void doComomNHTime(int frame = 0);
-
-		virtual void NewtonLineSearch(qeal& E, qeal& Eprev, qeal& alpha, SparseMatrix& A, VectorX& rhs, VectorX& x);
-
+	
 		virtual void setTimeStep(qeal t) { _timeStep = t; solverConfig->updateAlphas(_timeStep); }
 
 		virtual void saveFrameStatus(int frame, std::ofstream& fout);
 
 		virtual void recoverFrameStatus(int frame, std::ifstream& fin);
 
-
-		//
-
-		virtual void computeCommonNHElasticsEnergy(VectorX& X, VectorX& Xtilde, SparseMatrix& Mass, qeal& h, qeal& E);
-
-		virtual qeal computeCommonNeoHookeanEnergy(VectorX& displacement);
-
-		virtual qeal computeCommonNeoHookeanEnergy(int eid, BaseTetMeshHandle* tet, Matrix3& F);
-
-		void compute_dP_div_dF(const AutoFlipSVD<Matrix3>& svd,
-			qeal miu, qeal lambda,
-			MatrixX& dP_div_dF, bool projectSPD = true);
-
-		void compute_dE_div_dsigma(Vector3& singularValues, qeal miu, qeal lambda, Vector3& dE_div_dsigma);
-
-		void compute_d2E_div_dsigma2(Vector3& singularValues, qeal miu, qeal lambda, Matrix3& d2E_div_dsigma2);
-
-		void compute_BLeftCoef(Vector3& singularValues, qeal miu, qeal lambda, VectorX& BLeftCoef);
-
-		void compute_dE_div_dF(Matrix3& F, const AutoFlipSVD<Matrix3>& svd, qeal miu, qeal lambda, Matrix3& dE_div_dF); // FPK
-
-		void computeElementCNHEnergy(Vector3& singularValues, qeal miu, qeal lambda, qeal& E);
-
-
-		void computeCofactorMtr(const Matrix3& F, Matrix3& A);
 
 		void makePD3d(Matrix3& symMtr);
 		void makePD2d(Matrix2& symMtr);
