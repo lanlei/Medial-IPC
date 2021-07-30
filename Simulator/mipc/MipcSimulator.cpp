@@ -163,10 +163,6 @@ void MIPC::MipcSimulator::doTimeGpuDenseSystem(int frame)
 			std::cout << "Frame " << frame << " converges to " << res << " after " << newton_iter <<" iters."<< std::endl;
 			break;
 		}
-		else
-		{
-			std::cout << "--  Frame: " << frame << " iter: " << newton_iter << "  res: " << res << std::endl;
-		}
 
 		// line search
 		cudaMemcpy(_devMedialPointPosition, medialPointsBuffer.buffer.data(), 3 * totalMedialPoinsNum * sizeof(qeal), cudaMemcpyHostToDevice);
@@ -207,7 +203,6 @@ void MIPC::MipcSimulator::doTimeGpuDenseSystem(int frame)
 			}
 			constructConstraintSet(_kappa, false);
 			E = computeEnergy(_devSysX, _devSysXtilde);
-			std::cout << "----  line search  Ep: " << E <<"  E: " <<E <<"  toi: " << toi << std::endl;
 			toi *= 0.5;
 		} while ((E - Ep) > MIN_VALUE);
 		Ep = E;

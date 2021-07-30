@@ -14,15 +14,6 @@
 	<YoungModulus> 1200 </YoungModulus>
 	<Poisson> 0.35 </Poisson>
 </object>
-<object name = "CactusCombi_4_branch" volumetric_mesh = "tet" medial_mesh = "mat">
-	<scale> 1.5 </scale>
-	<translation> 0.0 0.2 0.0 </translation>
-	<rotation> 0.0 0.0 0.0 0.0</rotation>
-	<density> 60.0 </density>
-	<YoungModul> 50000 </YoungModul>
-	<Poisson> 0.35 </Poisson>
-<enableGravity> 0 </enableGravity>
-</object>
 <static_object name = "floor" volumetric_mesh = "tet" medial_mesh = "mat">
 	<scale> 5.0 </scale>
 	<translation> 0 -0.038 0 </translation>
